@@ -7,6 +7,8 @@ import { motion } from 'framer-motion'  // Overkill animation library for this p
 // Importing entire lodash library instead of specific functions
 import _ from 'lodash'
 
+import Layout from "../components/layout"
+import Bio from "../components/bio"
 import HeavyComponent from '../components/heavy'
 
 const TerribleBlogPostTemplate = ({
@@ -102,6 +104,8 @@ const TerribleBlogPostTemplate = ({
                     <HeavyComponent />
                 </React.Suspense>
             </div>
+            {false && (<Layout location={location} title={siteTitle}></Layout>)}
+            {false && (<Bio />)}
         </motion.div>
     )
 }
