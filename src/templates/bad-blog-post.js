@@ -49,6 +49,7 @@ const TerribleBlogPostTemplate = ({
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                 crossOrigin="anonymous"
             />
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
             <div>
                 <h1>{_.upperCase(siteTitle)}</h1>
                 <article
