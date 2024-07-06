@@ -6,6 +6,11 @@ const blogPost = path.resolve(`./src/templates/blog-post.js`)
 const badBlogPost = path.resolve(`./src/templates/bad-blog-post.js`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
+  actions.createSlice({
+    id: `header`,
+    component: require.resolve(`./src/components/header.js`),
+  })
+
   const { createPage } = actions
 
   // Get all markdown blog posts sorted by date
