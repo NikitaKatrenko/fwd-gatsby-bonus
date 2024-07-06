@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-export const HeaderSlice = ({ isRootPath, title }) => {
+const HeaderSlice = ({ isRootPath, title }) => {
     let header
 
     if (isRootPath) {
@@ -20,3 +20,5 @@ export const HeaderSlice = ({ isRootPath, title }) => {
 
     return <header className="global-header">{header}</header>
 }
+
+export default HeaderSlice
